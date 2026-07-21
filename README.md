@@ -24,13 +24,15 @@ Ce backend fait partie d'un projet de stage : une application web de supervision
 - Authentification JWT pour sécuriser l'accès à l'API
 
 ## Architecture
-src/main/java/com/supervision/supervisionbackend/
-├── config/ # Configuration Proxmox, VMware, RestTemplate
-├── controller/ # Endpoints REST
-├── model/ # Entités MongoDB (Host, VirtualMachine, MetricHistory)
-├── repository/ # Interfaces Spring Data MongoDB
-├── security/ # JWT, filtres, configuration de sécurité
-└── service/ # Logique métier (synchronisation, historique)
+
+- `config/` — Configuration Proxmox, VMware, RestTemplate
+- `controller/` — Endpoints REST
+- `model/` — Entités MongoDB (Host, VirtualMachine, MetricHistory)
+- `repository/` — Interfaces Spring Data MongoDB
+- `security/` — JWT, filtres, configuration de sécurité
+- `service/` — Logique métier (synchronisation, historique)
+
+Tous ces packages se trouvent sous `src/main/java/com/supervision/supervisionbackend/`
 ## Configuration
 
 1. Copie `application-example.properties` vers `application.properties`
